@@ -1,0 +1,41 @@
+.errorMessage {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background-color: #fee;
+  border: 1px solid var(--color-error);
+  border-radius: 8px;
+  color: var(--color-error);
+  margin-bottom: var(--spacing-md);
+
+  &__icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    flex: 1;
+    font-size: 0.9rem;
+  }
+
+  &__dismiss {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--color-error);
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: rgba(255, 68, 68, 0.1);
+    }
+  }
+}

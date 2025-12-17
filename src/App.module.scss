@@ -1,0 +1,36 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.appHeader {
+  padding: var(--spacing-lg) var(--spacing-xl);
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-bg-secondary);
+
+  h1 {
+    margin-bottom: var(--spacing-xs);
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+}
+
+.appMain {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: var(--spacing-xl);
+  width: 100%;
+  margin: 0 auto;
+}
+
+// Print-specific styles
+@media print {
+  .appHeader {
+    display: none !important;
+  }
+}

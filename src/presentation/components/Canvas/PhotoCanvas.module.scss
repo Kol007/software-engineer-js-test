@@ -1,0 +1,70 @@
+.photoCanvasHelper {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: var(--color-bg-secondary);
+  border-radius: 4px;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.photoCanvasError {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #fee;
+  border-left: 3px solid #d32f2f;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #d32f2f;
+}
+
+.photoCanvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-xl);
+  background-color: var(--color-bg-secondary);
+  border-radius: 8px;
+  min-height: 400px;
+
+  &__canvas {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// Print-specific styles
+@media print {
+  .photoCanvas {
+    padding: 0;
+    background: none;
+    min-height: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__canvas {
+      width: 15in;
+      height: 10in;
+      max-width: 15in;
+      max-height: 10in;
+      border-radius: 0;
+      box-shadow: none;
+      margin: 0;
+      padding: 0;
+      page-break-after: always;
+    }
+  }
+
+  .photoCanvasHelper,
+  .photoCanvasError {
+    display: none !important;
+  }
+}

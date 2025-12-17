@@ -1,0 +1,42 @@
+.positionControls {
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  &__row {
+    display: flex;
+    gap: var(--spacing-xs);
+    justify-content: center;
+  }
+
+  &__spacer {
+    width: 60px;
+  }
+
+  &__center {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+  }
+
+  &__label {
+    font-weight: 500;
+  }
+
+  &__step {
+    font-size: 0.7rem;
+  }
+
+  button {
+    width: 60px;
+    height: 40px;
+    padding: var(--spacing-xs);
+    font-size: 1.2rem;
+  }
+}
