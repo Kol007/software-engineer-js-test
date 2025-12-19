@@ -49,5 +49,15 @@
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "zustand": "^5.0.9"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 2 chrome version"
+    ]
   }
 }
